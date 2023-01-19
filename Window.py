@@ -21,7 +21,7 @@ class Window:
         else:
             return False
 
-    def print_window(self,):
+    def print_window(self):
         for row in self.cells:
             for cell in row:
                 print(cell.symbol, end='')

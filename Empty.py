@@ -3,9 +3,9 @@ from UnitABC import UnitABC
 
 class Empty(UnitABC):
     symbol = ' '
-    backObject = True
+    back_object = True
     head = False
 
     def superimposer(self):
-        return self.backObject
+        return self.back_object
 

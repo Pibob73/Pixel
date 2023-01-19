@@ -3,7 +3,7 @@ from Letter import Letter
 
 
 class Line:
-    def __init__(self, symbol, begin, length, direction, area, head=False, color='\033[37m'):
+    def __init__(self, symbol, begin, length, direction, area, head=False, color='\033[37m', floor=False):
         self.symbol = symbol
         self.color = color
         self.begin = begin
@@ -11,6 +11,7 @@ class Line:
         self.direction = direction
         self.window = area
         self.head = head
+        self.floor = floor
 
     def create_line(self):
         for border in range(self.length):
@@ -26,7 +27,8 @@ class Line:
                 right = border
             have_border = self.window.create_position(Letter(self.color + self.symbol, head=self.head),
                                                       self.begin[0] + up, self.begin[1] + right)
-            if have_border == False and self.head == False:
-                return
+            if not self.floor:
+                if have_border == False and self.head == False:
+                    return
 
 
