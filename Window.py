@@ -41,4 +41,8 @@ class Window:
         self.cells = []
         for i in range(self.height):
             self.cells.append([Empty()] * self.width)
+        for i in range(self.height):
+            self.let.append([False] * self.width)
+        for i in range(self.height):
+            self.danger.append([False] * self.width)
 

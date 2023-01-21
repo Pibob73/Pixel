@@ -10,5 +10,5 @@ class Fill:
     def fill(self):
         for x in range(self.window.height):
             for y in range(self.window.width):
-                if y < self.window.width:
+                if y < 80:
                     self.window.create_position(Letter(self.color + self.symbol, head=self.head), x, y)

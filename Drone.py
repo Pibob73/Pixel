@@ -1,10 +1,9 @@
 from UnitABC import UnitABC
 from Letter import Letter
 from Circle import Circle
-
 class Drone:
     def __init__(self, position, symbol, area, danger=False, let=False
-                 , direction='left', color='\033[33m', head=False, dynamic=False):
+                 , direction='', color='\033[33m', head=False, dynamic=False):
         self.symbol = color + symbol
         self.color = color
         self.static = False
@@ -32,8 +31,9 @@ class Drone:
         if direction == 'right':
             move_on_column += 1
         return self.window.let[move_on_row][move_on_column]
-
-    def move(self, direction):
+    def danger_zone(self):
+        return self.window.danger[self.position[0]][self.position[1]]
+    def move(self, direction=''):
         if self.can_move(direction):
             self.window.create_position(Letter(self.symbol, color=self.color, head=True), self.position[0],
                                         self.position[1])
