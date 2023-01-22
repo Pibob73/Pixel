@@ -1,4 +1,4 @@
-from Line import Line
+from .Line import Line
 
 class Block:
     def __init__(self, left_corner, right_corner, symbol, area, danger=False, let=False,

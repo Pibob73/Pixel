@@ -1,5 +1,4 @@
-from Line import Line
-from Window import Window
+from .Line import Line
 
 
 class Box:

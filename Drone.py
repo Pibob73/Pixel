@@ -1,6 +1,4 @@
-from UnitABC import UnitABC
-from Letter import Letter
-from Circle import Circle
+from .Letter import Letter
 class Drone:
     def __init__(self, position, symbol, area, danger=False, let=False
                  , direction='', color='\033[33m', head=False, dynamic=False):

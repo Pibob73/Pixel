@@ -1,5 +1,4 @@
-from Window import Window
-from Letter import Letter
+from .Letter import Letter
 
 
 class Text:

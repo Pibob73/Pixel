@@ -1,4 +1,4 @@
-from UnitABC import UnitABC
+from .UnitABC import UnitABC
 
 
 class Letter(UnitABC):

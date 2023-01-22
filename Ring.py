@@ -1,4 +1,4 @@
-from Letter import Letter
+from .Letter import Letter
 
 class Ring:
     def __init__(self, center, radius, symbol, area, danger=False, let=False,

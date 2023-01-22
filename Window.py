@@ -1,7 +1,4 @@
-from Letter import Letter
-from Empty import Empty
-from UnitABC import UnitABC
-
+from .Empty import Empty
 
 class Window:
     #23 80

@@ -1,4 +1,4 @@
-from Letter import Letter
+from .Letter import Letter
 class Fill:
     def __init__(self, center, symbol, area, head=False, color='\033[33m'):
         self.center = center

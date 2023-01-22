@@ -1,5 +1,4 @@
-from Letter import Letter
-import sys
+from .Letter import Letter
 
 
 class Circle:

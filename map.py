@@ -1,17 +1,13 @@
 import os
 import time
-from Line import Line
-from Window import Window
-from Box import Box
-from Letter import Letter
-from Text import Text
-from Circle import Circle
-from Pixel import Pixel
-from Fill import Fill
-from Drone import Drone
-from Ring import Ring
-from Block import Block
-from Empty import Empty
+from .Line import Line
+from .Box import Box
+from .Letter import Letter
+from .Text import Text
+from .Circle import Circle
+from .Pixel import Pixel
+from .Ring import Ring
+from .Block import Block
 def test_map(window):
     Box([0, 0], [22, 79], '#', window, color='\033[35m').create_block()
     Box([5, 5], [17, 74], '█', window, color='\033[36m').create_block()
