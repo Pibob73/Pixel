@@ -1,5 +1,5 @@
 from .Empty import Empty
-
+import random
 class Window:
     #23 80
     def __init__(self, height=23, width=80):
@@ -36,10 +36,9 @@ class Window:
 
     def clear_window(self):
         self.cells = []
+        self.danger = []
         for i in range(self.height):
             self.cells.append([Empty()] * self.width)
-        for i in range(self.height):
-            self.let.append([False] * self.width)
         for i in range(self.height):
             self.danger.append([False] * self.width)
 

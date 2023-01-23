@@ -1,6 +1,7 @@
 from .Line import Line
 from .Window import Window
 from .Box import Box
+from .Block import Block
 from .Letter import Letter
 from .Text import Text
 from .Circle import Circle
@@ -8,4 +9,5 @@ from .Pixel import Pixel
 from .Fill import Fill
 from .Drone import Drone
 from .Player import Player
+from .Ring import Ring
 from . import map
